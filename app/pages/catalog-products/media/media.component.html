@@ -1,0 +1,17 @@
+<p-galleria
+  [value]="media"
+  [containerStyle]="{ 'max-width': '100%' }"
+  [responsiveOptions]="responsiveOptions"
+  [numVisible]="5"
+  [circular]="true"
+>
+  <ng-template pTemplate="item" let-item>
+    <!-- <p-image src="{{item.src}}" width="520" [preview]="true"/> -->
+    <img [src]="item.src" style="width: 520px" />
+  </ng-template>
+  <ng-template pTemplate="thumbnail" let-item>
+    <div class="thumbnail grid grid-nogutter justify-content-center mt-3">
+      <img [src]="item.src" />
+    </div>
+  </ng-template>
+</p-galleria>

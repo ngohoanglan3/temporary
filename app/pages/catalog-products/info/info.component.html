@@ -1,0 +1,46 @@
+@for (pair of info | keyValue; track $index) {
+<p-accordion [multiple]="true" class="accordion">
+  <p-accordionTab header="{{ pair.key | title }}"> 123 </p-accordionTab>
+</p-accordion>
+<div class="info-wrapper-grid grid grid-nogutter">
+  <div class="title col-4 px-3">
+    <h1 class="title">{{ pair.key | title }}</h1>
+  </div>
+  <div class="content col-8">
+    @switch (pair.key) { @case ('about') {
+    {{ pair.value }}
+    } @case ('key_features') {
+    <div class="grid">
+      @for (item of pair.value; track $index) {
+      <div class="feature-item col-6">
+        <img class="icon" src="{{ item.image }}" />
+        <p class="name font-normal">{{ item.name }}</p>
+        <p class="description font-normal">{{ item.description }}</p>
+      </div>
+      }
+    </div>
+    } @case ('care_instructions') {
+    <div class="icons grid">
+      @for (item of pair.value; track $index) {
+      <img class="icon" src="{{ item.icon }}" alt="{{ item.set }}" />
+      }
+    </div>
+    <p class="description">
+      @for (item of pair.value; track $index) { {{ item.option }}; }
+    </p>
+    } @case ('size_guide') {
+    <p class="mb-4">
+      All measurements in the table refer to product dimensions.
+    </p>
+    <p-tabView>
+      <p-tabPanel header="Imperial">
+        <app-size-table [inch]="true" [sizes]="info.size_guide"></app-size-table>
+      </p-tabPanel>
+      <p-tabPanel header="Metric">
+        <app-size-table [sizes]="info.size_guide"></app-size-table>
+      </p-tabPanel>
+    </p-tabView>
+    } }
+  </div>
+</div>
+}

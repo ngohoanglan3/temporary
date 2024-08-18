@@ -1,0 +1,30 @@
+:host {
+  overflow-x: hidden;
+}
+
+.subtitle {
+  font-size: 1em;
+  line-height: 1.5rem;
+  color: #485256;
+  margin-bottom: 1.5rem;
+}
+
+.details {
+  padding-left: 16px;
+  margin-bottom: 16px;
+  text-wrap: balance;
+}
+
+.item {
+  font-size: 1em;
+  line-height: 1.5rem;
+  color: #17262b;
+}
+
+.details .item {
+  list-style-type: disc;
+}
+
+.details .item:not(:last-child) {
+  padding-bottom: 4px;
+}

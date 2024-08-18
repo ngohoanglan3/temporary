@@ -1,0 +1,37 @@
+.p-galleria .p-galleria-thumbnail-container {
+  background-color: white;
+}
+
+.p-galleria .p-galleria-thumbnail-container > button {
+  border: 1px solid #c4c7c8;
+  border-radius: 3px;
+}
+
+.p-galleria .p-galleria-thumbnail-container > button > * > * > * {
+  fill: #17262b;
+}
+
+.p-galleria .p-galleria-thumbnail-container > button:hover > * > * > * {
+  fill: #26984b;
+}
+
+.p-galleria .p-galleria-thumbnail-container > button:active {
+  background-color: #bcbcbc;
+}
+
+.thumbnail > img {
+  width: 72px;
+}
+
+@media (max-width: 959px) {
+  .p-galleria-item-container {
+    display: none;
+  }
+}
+
+@media (max-width: 959px) {
+  .thumbnail > img {
+      width: 220px;
+      height: 220px;
+  }
+}

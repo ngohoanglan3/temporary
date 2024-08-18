@@ -1,0 +1,165 @@
+.print-provider {
+  display: block;
+  border: 1px solid #e3e4e5;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+}
+
+/* .heading {
+  border-bottom: 1px solid #e3e4e5;
+  letter-spacing: -0.014em;
+  font-size: 1.125em;
+} */
+
+.p-overlaypanel {
+  margin-top: 10px;
+}
+
+.p-overlaypanel-flipped {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.p-overlaypanel-content {
+  background-color: #fff;
+  padding: 1.5rem;
+}
+
+.details > * > .title {
+  color: #686f71;
+  margin-top: unset;
+}
+
+.flag {
+  overflow: hidden;
+  width: 28px;
+  height: 28px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.p-tooltip-arrow {
+  display: none;
+}
+
+.p-tooltip {
+  background-color: #403568;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 0.875rem;
+}
+
+.shipping-price,
+.production-day {
+  cursor: help;
+  text-decoration: underline dashed;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.details > *:not(:last-child) {
+  padding-right: 24px;
+}
+
+.option-color {
+  margin-right: 0.5rem;
+  display: inline-block;
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.group {
+  display: flex;
+  position: absolute;
+  inset: 0;
+}
+
+.color {
+  flex-grow: 1;
+  background-size: auto 100%;
+}
+
+.color {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(23, 38, 43, 0.15);
+  border-radius: 50%;
+}
+
+.provider-info {
+  padding: 7px 23px;
+  border: 1px solid #c4c7c8;
+  background-color: #fff;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.dialog {
+  max-width: 1008px;
+  max-height: 85%;
+  height: auto;
+  background-color: #fff;
+}
+
+.p-dialog-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e3e4e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-dialog-content {
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.p-dialog-header-icons > button {
+  box-shadow: none;
+  margin-left: 1.5rem;
+  border-radius: 3px;
+  border: 1px solid #c4c7c8;
+}
+
+.p-dialog-header-icons > button:hover > * > * {
+  color: #29ab51;
+}
+
+.p-dialog-header-icons > button:active {
+  background-color: #d5d8d8;
+}
+
+.options-button {
+  padding: 7px 23px;
+  border-radius: 3px;
+  border: 1px solid #c4c7c8;
+  box-shadow: none;
+}
+
+.options-button > * {
+  color: #17262b;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.options-button:hover > * {
+  color: #29ab51;
+}
+
+.p-progressbar {
+  border: 0 none;
+  height: 4px;
+  background: #e3e4e5;
+  border-radius: 6px;
+}
+
+.p-progressbar .p-progressbar-value {
+  border: 0 none;
+  margin: 0;
+  background: #29ab51;
+}

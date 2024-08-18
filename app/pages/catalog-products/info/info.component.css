@@ -1,0 +1,100 @@
+.accordion {
+  display: block;
+}
+
+.info-wrapper-grid {
+  display: none;
+}
+
+.info-wrapper-grid:not(:last-child) {
+  border-bottom: 1px solid #e3e4e5;
+}
+
+@media (min-width: 960px) {
+  .info-wrapper-grid {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .accordion {
+    display: none;
+  }
+}
+
+.title {
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5em;
+  line-height: 2rem;
+}
+
+.feature-item {
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+.content {
+  padding: 0 1rem;
+}
+
+.feature-item .icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+
+.feature-item .name {
+  margin-bottom: 8px;
+}
+
+.feature-item .description {
+  color: #9fa4a5;
+  font-size: 0.875em;
+  line-height: 1.25rem;
+}
+
+.icons.grid .icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding: 0 8px;
+  margin-bottom: 32px;
+  box-sizing: content-box;
+}
+
+.p-accordion-header {
+  padding: 1.5rem 0;
+}
+
+.p-accordion-header-link {
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.p-accordion-header > * > span {
+  font-size: 1.5em;
+  line-height: 2rem;
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  background: #ffffff;
+  color: #29ab51;
+}
+
+.p-tabview-title {
+  padding: 8px;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.p-tabview .p-tabview-nav {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-width: 0 0 1px 0;
+}
+
+.p-highlight .p-tabview-title {
+  border-bottom: 1px solid;
+}

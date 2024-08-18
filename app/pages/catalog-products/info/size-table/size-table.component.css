@@ -1,0 +1,13 @@
+.p-datatable .p-datatable-thead > * > * {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.p-datatable .p-datatable-tbody > * > *,
+.p-datatable .p-datatable-thead > * > * {
+  padding: 16px;
+  font-size: 0.875em;
+}
+
+.p-datatable.p-datatable-striped .p-datatable-tbody > tr:nth-child(even) {
+  background: #f8f8fa;
+}

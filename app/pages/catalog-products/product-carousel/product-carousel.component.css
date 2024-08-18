@@ -1,0 +1,61 @@
+.product {
+  max-width: 250px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.product:hover {
+  background-color: #f7f7f7;
+}
+
+.p-card {
+  box-shadow: none;
+}
+
+.p-card-content {
+  padding: 16px 16px 8px;
+}
+
+.image-container {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.image-container img {
+  position: absolute;
+  transition: transform 0.1s ease-out, opacity 0.15s linear;
+}
+
+.image-container > *:nth-child(1) {
+  z-index: 2;
+}
+
+.image-container > *:nth-child(2) {
+  z-index: 1;
+  opacity: 0;
+}
+
+.product:hover > *:first-child > * > *:nth-child(1) {
+  opacity: 0;
+}
+
+.product:hover > *:first-child > * > *:nth-child(2) {
+  opacity: 1;
+}
+
+.p-carousel-container > button {
+  border: 1px solid #c4c7c8;
+  border-radius: 3px;
+}
+
+.p-carousel-container > button:active {
+  background-color: #bcbcbc;
+}
+
+.p-carousel-container > button > * > * > * {
+  fill: #17262b;
+}
+
+.p-carousel-container > button:hover > * > * > * {
+  fill: #26984b;
+}
